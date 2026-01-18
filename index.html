@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Игра 666</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .box {
+      text-align: center;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      background: crimson;
+      color: white;
+    }
+    button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Игра 666</h1>
+    <p>Нажатий: <span id="count">0</span></p>
+    <button onclick="clicker()">ЖМИ</button>
+  </div>
+
+  <script>
+    let count = 0;
+    function clicker() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }
+  </script>
+</body>
+</html>
